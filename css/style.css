@@ -1,0 +1,294 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+	height: 100%;
+}
+
+.clear {
+	clear: both;
+}
+
+.header {
+	width: 100%;
+	padding: 1.7rem 2%;
+	background-color: #003580;
+}
+
+.header h2 {
+	font-size: 2rem;
+	letter-spacing: 2px;
+	color: #FFF;
+}
+
+.center {
+	max-width: 1280px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.header img {
+	width: 220px;
+	margin: 30px;
+}
+
+.container-banner {
+	width: 100%;
+	height: 500px;
+	padding: 0 2%;
+	background-image:url('../images/hotel-hilton-morumbi-sao-paulo.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.form {
+	width: 400px;
+	height:calc(100% + 60px);
+	background-color: white;
+	padding: 12px;
+	float: right;
+	position: relative;
+    top: -27px;
+	border: 8px solid rgba(120,120,120,0.7);
+    background-clip: padding-box;
+}
+
+.form h2 {
+	font-weight: normal;
+	color: #999999;
+	font-size: 22px;
+	text-align: center;
+}
+
+.input-container {
+	margin-top: 20px;
+}
+
+.input-container span {
+	display: inline-block;
+	width: 100%;
+	color: #BBBBBB;
+	font-size: 17px;
+}
+
+.input-container input[type=text] {
+	width: 344px;
+	height: 55px;
+	padding: 8px 10px 8px 10px;
+	margin-top: 8px;
+	border: 1px solid #ccc;
+}
+
+.input-container input[type=text] {
+	outline: 0;
+}
+
+.form p {
+	display: inline-block;
+	width: 100%;
+	color: #BBBBBB;
+	font-size: 17px;
+	margin: 20px 0;
+}
+
+.form .input-submit-container {
+	text-align: center
+}
+
+.form input[type=submit] {
+	padding: 1rem 5rem;
+	background-color: #0071c2;
+	color: white;
+	display: inline-block;
+	font-size: 25px;
+	cursor: pointer;
+	border-radius: 0.5rem;
+	border: none;
+}
+
+.form input[type=submit]:hover {
+	background-color: #003580;
+}
+
+.container-list {
+	max-width: 550px;
+	float: left;
+	background-color: rgba(33,35,67, 0.7);
+	margin-top: 100px;
+	padding: 1rem;
+}
+
+.container-list ul {
+	list-style-position: inside;
+}
+
+.container-list ul li {
+	color: white;
+	margin-top: 18px;
+	font-size: 1.3rem;
+}
+
+.container-section1 {
+	padding: 40px 2%;
+	background-color: #DDDDDD;
+	text-align: center;
+}
+
+.container-section1 h1 {
+	font-weight: normal;
+}
+
+.container-section1 p {
+	width: 100%;
+	max-width: 768px;
+	margin: 15px 0;
+	font-size: 17px;
+	display: inline-block;
+	text-align: justify;
+}
+
+.container-section2 {
+	padding: 90px 2%;
+}
+
+.container-section2 h2 {
+	text-align: center;
+	color: #0071c2;
+	font-size: 1.9rem;
+	font-weight: bold;
+}
+
+.container-section {
+	width: 100%;
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.container-single {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container-single .img-container {
+	width: 170px;
+	height: 170px;
+	border-radius: 0.7rem;
+	transition: 0.3 all;
+}
+
+.container-single .img-container:hover {
+	transform: scale(1.1)
+}
+
+.text-container-single h2 {
+	max-width: 300px;
+	font-size: 1.3rem;
+	font-weight: bold;
+	color: #0071c2;
+	margin: 1rem auto 0 auto;
+}
+
+.text-container-single p {
+	padding: 10px;
+	margin-top: 0.7rem;
+	font-size: 1rem;
+	display: inline-block;
+	text-align: center;
+}
+
+.footer {
+	padding: 30px 0;
+	border-top: 2px solid #888888;
+	clear: both;
+	text-align: center;
+}
+
+.footer p {
+	margin-top: 8px;
+	color: #888888;
+	font-size: 18px;
+}
+
+@media screen and (max-width: 1024px) {
+	.header {
+        width: 100%;
+	    height: auto;
+	    padding: 15px 0;
+        text-align: center
+	}
+
+	.container-banner {
+	    width: 100%;
+	    height: auto;
+	    padding: 40px 2%;
+	    text-align: center;
+	}
+
+	.form {
+		max-width: 400px;
+		width: 60%;
+	    height: 100%;
+	    padding: 10px;
+	    /* float: right; */
+	    top: 0;
+	}
+
+	.container-list {
+		max-width: 500px;
+		width: 40%;
+	    height: auto;
+	    display: inline-block;
+	    /* float: left; */
+	    padding: 20px 0;
+	}
+
+	.input-container input[type=text] {
+	    width: 100%;
+	    height: 55px;
+    }
+
+    .form input[type=submit] {
+	    max-width: 280px;
+	    width: 100%;
+	    height: 56px;
+    }
+
+	.container-section {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.container-section1 {
+		padding-left: 4%;
+		padding-right: 4%;
+	}
+
+	.form {
+		width: 90%;
+		float: none;
+		display: inline-block;
+		margin-top: 30px;
+	}
+
+	.container-list {
+		margin-top: 0;
+		float: none;
+		display: inline-block;
+		width: 100%;
+	}
+
+	.container-single {
+		width: 100%;
+		max-width: 600px;
+		margin-top: 2.5rem; 
+	}
+}
